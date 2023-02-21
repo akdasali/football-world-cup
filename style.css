@@ -1,0 +1,23 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.header-section{
+    width: 1321px;
+    height: 646px;
+    margin: 0 auto;
+}
+header{
+    background: #161616;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+}
+.heading-para-button-image{
+    display: flex;
+     border-radius: 30px;
+}
+.heading-para-button-image p{
+    color: white;
+}

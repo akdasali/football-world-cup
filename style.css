@@ -12,11 +12,11 @@ header section starts
     width: 80%;
     margin: 0 auto;
 }
-.header-section{
+/* .header-section{
     width: 1321px;
     height: 646px;
     margin: 20px; 
-}
+} */
 header{
     background: #161616;
 }
@@ -39,6 +39,7 @@ h1{
 }
 .heading-para-button-image p{
     color: white;
+    
 }
 .heder-button{
     background-color: #DD0000;
@@ -66,15 +67,19 @@ main section starts
     }
     .left-right{
         display: flex;
+        margin-bottom: 10px;
     }
     .left{
-      
+        display: flex;
+        text-align: center;
+        align-items: center;
         background: #161616;
         color: white;
         height: 256px;
         width: 256px;
-        margin-left: 24px;
+        margin-top: 22px;
         border-radius: 10px;
+        justify-content: center;
     }
     button{
         margin: 7px;
@@ -86,17 +91,23 @@ main section starts
         display: flex;
         flex-direction: column;
     }
-    .all-button button:hover{
-        background-color: #DD0000;
+   
+    /* .all-button a:hover{
+        color: white;
+        
+    } */
+    .all-button a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-size: 19px;
+        border: 2px solid white;
+        margin: 5px 0;
+        border-radius: 5px;
+        
     }
     .all-button a:hover{
-        color: white;
-    }
-    .all-button ul a{
-        text-decoration: none;
-        color: black;
-        font-size: 19px;
-        
+        background-color: #DD0000;
     }
     .right{
         margin-left: 10px;
@@ -107,6 +118,7 @@ main section starts
         width: 312px;
         height: 362px;
         margin: 24px;
+        
     }
     .right-blog-img{
         width: 100%;
@@ -154,4 +166,124 @@ main section ends
     padding: 10px;
     color: white;
     }
+    hr{
+        height: .5px;
+    }
 /* footer ends */
+
+
+
+/* responsive for mobile */
+@media only screen and (max-width: 688px) {
+    /* .container {
+        width: 100%;
+        
+    } */
+    .heading-para-button-image{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+   
+    .header-section{
+        /* width: 100%; */
+    }
+    .heading-para-button{
+        height: 50%;
+        
+    }
+    .header-image{
+        height: 50%;
+        margin-top: 50px;
+        width: 97%;
+        
+    }
+    .main-section{
+        /* margin-top: 100px; */
+    }
+    .left-right{
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 55px; */
+}
+    
+    .left{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        flex-direction: row;
+        height: 122px;
+        margin-left: 0;
+    }
+    .all-button{
+        display: flex;
+        flex-direction: row;
+    }
+    .all-button button{
+        width: 100%;
+    }
+    .right{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* margin: 5px 0; */
+        grid-gap:10px;
+    }
+    .img-and-descrip {
+       margin-left: 0;
+    }
+    .footer-all{
+
+    }
+    footer{
+        
+    }
+    .footer-descrip{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* for tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    .heading-para-button-image{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .header-image{
+        width: 99%;
+    }
+    .left-right{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .left {
+            height: 49px;
+            margin: 0 auto;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    .all-button{
+        display: flex;
+        flex-direction: row;
+       
+
+    }
+    .right{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 20px;
+
+    }
+    .img-and-descrip{
+        margin: 0;
+        width: 100%;
+    }
+    .footer-all{
+        
+    }
+
+}
